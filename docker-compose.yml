@@ -1,0 +1,20 @@
+php:
+  image: php:8.0-apache
+  container_name: password_generator
+  ports:
+    - "80:3000"
+    - "443:443"
+  volumes:
+  - ./password_generator:/var/www/html
+  links:
+  - db
+
+db:
+  image: mysql:latest 
+  container_name: banco_poo
+  ports:
+    - "3306:3306"
+  volumes:
+    - /var/lib/mysql
+  environment:
+    - MYSQL_ROOT_PASSWORD=root
