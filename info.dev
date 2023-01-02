@@ -1,0 +1,9 @@
+O programa deve seguir  as restrições abaixo:
+ - O Programa deve permitir que o usuário informe o tamanho desejado para a senha, 
+ mas deve ter um limite entre 6 e 60 caracteres
+ - O Programa deve permitir que o usuário defina se deve ter letras maiúsculas,
+ letras minúsculas, caracteres numéricos e caracteres especiais;
+ - O Programa deve impedir a geração de senha caso nenhum tipo de caracteres for defenida.
+
+
+ referência: https://www.youtube.com/watch?v=_Si_FWAFPOc&list=PL_zkXQGHYosHS3RBHACgqkzbJdl8C4H_V&index=5
