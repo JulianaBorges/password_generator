@@ -29,7 +29,26 @@ if(readline('Permitir caracteres numéricos? (s/n)') == "s"){
 if(empty($caracteres)){
     die("Nenhum caractere selecionado");
 }
-   echo"<pre>";
-   print_r($caracteres);
-   echo "</pre>"; exit;
+while(count($caracteres) < $tamanho){
+    $caracteres = array_merge($caracteres,$caracteres);
+}
+
+
+// BAGUNÇA OS CARACTERES
+shuffle($caracteres);
+
+// nova senha
+$senha = implode('', array_slice($caracteres,0,$tamanho));
+
+    // echo"<pre>";
+    // print_r($senha);
+    // echo "</pre>"; exit;
+
+
+    //IMPREMI
+
+    echo "\nNova senha: ".$senha."\n\n";
+
+
+   
 
